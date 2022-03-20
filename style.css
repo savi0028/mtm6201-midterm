@@ -141,13 +141,20 @@ nav a:link {
 header {
     position: relative;
     text-align: center;
-    /* background-image: url(images/Mobile/mobile-home.jpg); */
     
 }
 
-header img {
+header picture {
     max-width: 100%;
+    height: auto;
+    background-size: cover;
 }
+
+header picture source {
+    max-width: 100%;
+    height: auto;
+}
+
 
 .tagline {
     padding-right: 2em;
@@ -157,11 +164,7 @@ header img {
     right: 1em;
 }
 
-.mission img{
-    width: 8em;
 
-
-}
 
 
 /* ---------- Desktop CSS ------------ */

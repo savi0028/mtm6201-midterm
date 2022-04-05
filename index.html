@@ -22,7 +22,7 @@
 
 <body>
     <nav class="flex-container">
-        <div id="mainlogo">
+        <div class="mainlogo">
             <a href="index.html">
                 <img src="images/Logo/TSODlogo.png" alt="logo" width="100%">
             </a>
@@ -44,15 +44,20 @@
             <a href="about.html" class="button">Learn More</a>
         </div>
 
-        <picture>
+        <picture class="bannerphoto">
             <source srcset="images/mobile/mobile-home.jpg"
             media= "(max-width: 400px)"/>
 
             <source srcset="images/desktop/home-image.jpg"
             media= "(min-width: 1000px)"/>
+            <!-- THIS IMAGE IS OVERFLOWING!! -->
 
             <img src="images/Mobile/mobile-home.jpg"  alt="picture of dancer">
         </picture>
+
+        <!-- <img class="bannerimgmoblie" src="images/Mobile/mobile-home.jpg"  alt="picture of dancer">
+
+        <img class="bannerimgdesktop" src="images/Desktop/home-image.jpg" alt="picture of dancer"> -->
     </header>
 
     <footer>

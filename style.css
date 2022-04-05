@@ -141,30 +141,67 @@ nav a:link {
 header {
     position: relative;
     text-align: center;
+    max-width: 1600px;
+    
     
 }
 
-header picture {
+picture {
+    object-fit: contain;
+
+}
+
+/* header picture {
     max-width: 100%;
     height: auto;
     background-size: cover;
-}
+} */
 
-header picture source {
+.bannerphoto {
+    align-content: center;
     max-width: 100%;
     height: auto;
+   
 }
+
+
 
 
 .tagline {
-    padding-right: 2em;
+    color: white;
     position: absolute;
     text-align: right;
     top: 2em;
     right: 1em;
 }
 
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+}
+.mainlogo {
+    flex: 25%;
+    align-items: flex-end;
+}
 
+.nav {
+    flex: 75%;
+    align-items: flex-end;
+}
 
+.bannerimgmobile{
+    max-width: 300px;
+    background-size: cover;
+}
 
 /* ---------- Desktop CSS ------------ */
+
+.bannerimgdesktop {
+    min-width: 800px;
+}
+
+@media only screen and (min-device-width: 600px) {
+
+}

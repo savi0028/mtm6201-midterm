@@ -8,6 +8,7 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
+    <!-- navigation -->
     <nav class="flex-container">
         <div class="mainlogo">
             <a href="index.html">
@@ -24,43 +25,46 @@
         </ul>
     </nav>
     
+    <!-- content -->
     <header>
-        <div>
-            <h1>About</h1>
-
-            <section class="mission">
-                <h2>Our Mission</h2>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est. </p>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-            </section>
-        </div>
-
-        <picture style="opacity: 20%;">
-            <source srcset="images/mobile/mobile-about.jpg" 
-            media= "(max-width: 400px)" />
-
-            <source srcset="images/desktop/about-image.jpg"
-            media= "(min-width: 800px)"/>
-
-            <img src="images/Mobile/mobile-about.jpg"  alt="picture of dancer">
-        </picture>
+        <h1>About</h1>
     </header>
 
-    <footer>
-        <div class="copyright">
-            <p>The School of Dance</p>
+    
+    <div class="row">
+        <div class="column">
+            <picture class="aboutphoto">
+                <source srcset="images/mobile/mobile-about.jpg"
+                media= "(max-width: 400px)"/>
+    
+                <source srcset="images/desktop/about-image.jpg"
+                media= "(min-width: 1000px)"/>
+                <!-- THIS IMAGE IS OVERFLOWING!! -->
+    
+                <img src="images/Mobile/mobile-about.jpg"  alt="picture of dancer">
+            </picture>
+        </div>
+
+        <section class="column">
+            <h2>Our Mission</h2>
+            
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est. </p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </section>
+    </div>
+
+    <!-- footer -->
+    <footer class="row">
+        <div class="column">
+            <p>&copy;The School of Dance</p>
         </div>
         
-        <div class="address">
+        <div class="column">
             <p>613-123-3567</p>
             <p>103 Chrichton Street</p>
             <p>Ottawa, On</p>
             <p>K1M 1W2</p>
-        </div>
-       
-        <div class="follow"> 
-            <p>Follow us</p>  
         </div>
     </footer>
 </body>

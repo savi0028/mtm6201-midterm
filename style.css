@@ -62,16 +62,21 @@ body {
 }
 
 h1  {
-    font-family: 'Baloo  2';
-    font-size: 2em;
-    font-weight: 700;
+    font-family: 'Baloo 2';
+    font-size: 1.5em;
+    font-weight: 500;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
 }
 
 h2  { 
     font-family: 'Baloo 2';
-    font-weight: 400;
+    font-size: 1em;
+    font-weight: 600;
     line-height: 1.5em;
     padding-bottom: 1em;
+    
 
 }
 h3  {
@@ -82,14 +87,15 @@ h3  {
 p {
     font-family: 'Baloo 2';
     font-weight: 400;
-    line-height: 1.5em;
+    line-height: 1em;
     padding-bottom: 1em;
 }
 
 li {
     font-family: 'Baloo 2';
-    font-weight: 500;
-    font-size: 1.2em;
+    font-weight: 400;
+    font-size: 1em;
+    text-transform: uppercase;
 }
 
 form {
@@ -115,6 +121,10 @@ nav a:link {
     font-size: 1.2em;
 }
 
+nav ul {
+    margin: .5em;
+}
+
 .current a:link {
     font-weight: 700;
     color: var(--accent-color)
@@ -136,11 +146,21 @@ nav a:link {
     justify-content: space-evenly;
 
 }
-/* 
+
 .flex-container {
     display: flex;
     flex-direction: row;
-} */
+}
+
+.mainlogo {
+    flex: 25%;
+    align-items: flex-end;
+}
+
+.nav {
+    flex: 75%;
+    align-items: flex-end;
+}
 
 
 
@@ -151,7 +171,8 @@ nav a:link {
     position: absolute;
     text-align: right;
     top: 2em;
-    right: 1em;
+    right: 2em;
+    margin: 10px;
 }
 
 .flex-container {
@@ -159,15 +180,6 @@ nav a:link {
     flex-wrap: wrap;
     margin-bottom: 0%;
     padding-bottom: 0%;
-}
-.mainlogo {
-    flex: 25%;
-    align-items: flex-end;
-}
-
-.nav {
-    flex: 75%;
-    align-items: flex-end;
 }
 
 
@@ -185,18 +197,13 @@ nav a:link {
 header {
     position: relative;
     text-align: center;
-    max-width: 1600px;
+    margin-bottom: 0px;
 }
 
 picture {
     object-fit: contain;
 }
 
-/* header picture {
-    max-width: 100%;
-    height: auto;
-    background-size: cover;
-} */
 
 .bannerphoto {
     align-content: center;
@@ -212,15 +219,15 @@ picture {
   
   .column {
     flex: 50%;
-    margin: 20px;
+    margin: 10px;
   }
 
-/* contact form */
+/* contact*/
 
 .container {
-    border-radius: 5px;
     padding: 20px;
-    margin: 20px;
+    margin: 10px;
+    margin-top: 0px;
   }
 
   input[type=text], select, textarea {
@@ -235,14 +242,23 @@ picture {
   }
 
 /* footer style */
+
 footer {
     text-align: center;
-    padding: 3px;
+    margin-top: -5px;
     background-color: #5A5D5C;
     color: white;
   }
 
-  /* media querie */
-  @media only screen and (min-width: 600px) {
-    /* about */
+  footer div p {
+      padding-top: .5em;
+      line-height: .5em;
+      font-size: small;
+  }
+
+  /* media querey */
+
+  @media only screen and (min-width: 800px) {
+    /* footer style */
+
   }

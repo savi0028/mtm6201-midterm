@@ -63,25 +63,28 @@ body {
 
 h1  {
     font-family: 'Baloo 2';
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 500;
     padding-top: 1em;
     padding-bottom: 1em;
-    text-align: center;
+    text-align: right;
 }
 
 h2  { 
     font-family: 'Baloo 2';
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: 600;
     line-height: 1.5em;
-    padding-bottom: 1em;
+    padding: 1em;
+    text-align: center;
     
 
 }
 h3  {
-    font-family: 'Baloo  2';
+    font-family: 'Baloo 2';
+    font-size: 1em;
     font-weight: 500;
+
 }
 
 p {
@@ -256,9 +259,24 @@ footer {
       font-size: small;
   }
 
-  /* media querey */
+ @media only screen and (min-width: 800px) {
+    /* homepage  */
+   h1 {
+        font-family: 'Baloo 2';
+        font-size: 3em;
+        font-weight: 500;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        text-align: right;
+    } 
 
-  @media only screen and (min-width: 800px) {
-    /* footer style */
-
-  }
+    h2  { 
+        font-family: 'Baloo 2';
+        font-size: 2em;
+        font-weight: 600;
+        line-height: 1.5em;
+        padding-bottom: 1em;
+        padding: 1em;
+        text-align: center;
+    }
+  } 

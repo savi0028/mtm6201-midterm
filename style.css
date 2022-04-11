@@ -264,7 +264,7 @@ footer {
    h1 {
         font-family: 'Baloo 2';
         font-size: 3em;
-        font-weight: 500;
+        font-weight: 700;
         padding-top: 1em;
         padding-bottom: 1em;
         text-align: right;
@@ -279,4 +279,61 @@ footer {
         padding: 1em;
         text-align: center;
     }
+
+    /* mobile nav */
+
+    nav {
+        border-bottom: black solid 4px;
+        padding: 1em;
+    }
+    
+    nav a:link {
+        font-weight: 500;
+        text-decoration: none;
+        color: black;
+        font-size: 1.2em;
+    }
+    
+    nav ul {
+        margin: .5em;
+    }
+    
+    .current a:link {
+        font-weight: 700;
+        color: var(--accent-color)
+    }
+    
+    :visited {
+        font-weight: 700;
+        color: black;
+    }
+    
+    .current a:visited {
+        font-weight: 700;
+        color: var(--accent-color)
+    }
+    
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    /* .flex-container {
+        display: flex;
+        flex-direction: row;
+    } */
+    
+    .mainlogo {
+        flex: 25%;
+        align-items: flex-end;
+    }
+    
+    .nav {
+        flex: 75%;
+        align-items: flex-end;
+    }
+
+    
+
   } 
